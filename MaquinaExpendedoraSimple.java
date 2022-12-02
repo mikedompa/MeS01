@@ -20,8 +20,8 @@
         precioBillete = 20;
         balanceClienteActual = 0;
         totalDineroAcumulado = 0;
-        estacionOrigen = "León";
-        estacionDestino = "Madrid";
+        estacionOrigen = León;
+        estacionDestino = Madrid;
     }
 
     /**
@@ -52,8 +52,8 @@
         // Simula la impresion de un billete
         System.out.println("##################");
         System.out.println("# Billete de tren:");
-        System.out.println("# De León a Madrid" );
-        System.out.println("# 20 euros.");
+        System.out.println("# De " + estacionOrigen + " a " + estacionDestino);
+        System.out.println("# " + precioBillete + " euros. ");
         System.out.println("##################");
         System.out.println();
 
