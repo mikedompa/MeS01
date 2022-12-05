@@ -23,10 +23,9 @@
         estacionOrigen = "León";
         estacionDestino = "Madrid";
     }
-    public MaquinaExpendedoraSimple (int precioDelBillete, String origen, String destino, int totalDineroAcu){
+    public MaquinaExpendedoraSimple (int precioDelBillete, String origen, String destino){
         precioBillete = precioDelBillete;
         balanceClienteActual = 0;
-        totalDineroAcumulado = totalDineroAcu;
         estacionOrigen = origen;
         estacionDestino = destino;
     }
