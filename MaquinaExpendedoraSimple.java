@@ -17,14 +17,14 @@
      * del billete que se recibe es mayor que 0.
      */
     public MaquinaExpendedoraSimple () {
-        precioBillete = 20;
+        precioBillete = 30;
         balanceClienteActual = 0;
         totalDineroAcumulado = 0;
         estacionOrigen = "León";
         estacionDestino = "Madrid";
     }
     
-    public MaquinaExpendedoraSimple (int precioDelBillete, String origen, String destino){
+    public MaquinaExpendedoraSimple (int precioDelBillete,String origen, String destino){
         precioBillete = precioDelBillete;
         balanceClienteActual = 0;
         estacionOrigen = origen;
@@ -34,8 +34,8 @@
     /**
      * Devuelve el precio del billete
      */
-    public void setPrecioBillete(int precioDelBillete) {
-        precioBillete = precioDelBillete;
+    public void precioBillete(int precioReduxBillete) {
+        precioBillete = precioBillete - precioReduxBillete;
     }
 
     /**
