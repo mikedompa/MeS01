@@ -34,8 +34,8 @@
     /**
      * Devuelve el precio del billete
      */
-    public void precioBillete(int precioDelBillete) {
-        precioBillete = precioBillete - precioDelBillete;
+    public void precioBillete(int reducirPrecioBillete) {
+        precioBillete = precioBillete - reducirPrecioBillete;
     }
 
     /**
