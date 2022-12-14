@@ -11,7 +11,7 @@
     // El destino del billete
     private String estacionDestino;
     
-    private int depositoDinero;
+    private int vaciarDepositoDinero;
 
     /**
      * Crea una maquina expendedora de billetes de tren con el 
@@ -53,7 +53,7 @@
     }
     
     public int vaciarDepositoDinero() {
-        return depositoDinero;
+        return vaciarDepositoDinero;
     }
     
     /**
