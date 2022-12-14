@@ -10,7 +10,8 @@
     private String estacionOrigen;
     // El destino del billete
     private String estacionDestino;
-    private int vaciarDineroAcumulado;
+    
+    private int depositoDinero;
 
     /**
      * Crea una maquina expendedora de billetes de tren con el 
@@ -25,10 +26,10 @@
         estacionDestino = "Madrid";
     }
     
-    public MaquinaExpendedoraSimple (int precioDelBillete, int vaciarDineroAcumulado, String origen, String destino){
+    public MaquinaExpendedoraSimple (int precioDelBillete, String origen, String destino){
         precioBillete = precioDelBillete;
         balanceClienteActual = 0;
-        vaciarDineroAcumulado = 0;
+        totalDineroAcumulado = 0;
         estacionOrigen = origen;
         estacionDestino = destino;
     }
@@ -51,15 +52,15 @@
         return totalDineroAcumulado;
     }
     
+    public int vaciarDepositoDinero() {
+        return depositoDinero;
+    }
+    
     /**
      * Simula la introduccion de dinero por parte del cliente actual
      */
     public void introducirDinero(int cantidadIntroducida) {
         balanceClienteActual = balanceClienteActual + cantidadIntroducida;
-    }
-    
-    public void vaciarDineroAcumulado(int totalDineroAcumulado){
-        vaciarDineroAcumulado= totalDineroAcumulado - totalDineroAcumulado;
     }
     
     /**
