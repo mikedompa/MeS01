@@ -1,4 +1,4 @@
-    public class MaquinaExpendedoraSimple {
+public class MaquinaExpendedoraSimple {
     
     // El precio del billete
     private int precioBillete;
@@ -10,8 +10,6 @@
     private String estacionOrigen;
     // El destino del billete
     private String estacionDestino;
-    
-    private int vaciarDepositoDinero;
 
     /**
      * Crea una maquina expendedora de billetes de tren con el 
@@ -33,29 +31,23 @@
         estacionOrigen = origen;
         estacionDestino = destino;
     }
-
     /**
      * Devuelve el precio del billete
      */
     public void precioBillete(int reducirPrecioBillete) {
         precioBillete = precioBillete - reducirPrecioBillete;
     }
-
     /**
      * Devuelve la cantidad de dinero que el cliente actual lleva introducida
      */
-    public int getBalanceClienteActual() {
-        return balanceClienteActual;
+    public void getBalanceClienteActual(int vaciarDepositoDinero) {
+        balanceClienteActual = 0;
     }
     
     public int getTotalDineroAcumulado() {
         return totalDineroAcumulado;
     }
-    
-    public int vaciarDepositoDinero() {
-        return vaciarDepositoDinero;
-    }
-    
+
     /**
      * Simula la introduccion de dinero por parte del cliente actual
      */
@@ -74,7 +66,6 @@
         System.out.println("# " + precioBillete + " euros. ");
         System.out.println("##################");
         System.out.println();
-
         // Actualiza el total de dinero acumulado en la maquina
         totalDineroAcumulado = totalDineroAcumulado + balanceClienteActual;
         // Queda preparada para el proximo cliente
